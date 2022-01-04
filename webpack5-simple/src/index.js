@@ -1,5 +1,5 @@
 import { Component1 } from '@/component1';
-import { Component2 } from '@/component2';
 
-Component1();
-Component2();
+const button = Component1();
+
+document.querySelector("#app").appendChild(button);
