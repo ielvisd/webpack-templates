@@ -2,6 +2,8 @@ const path = require('path');
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
+const { CleanWebpackPlugin } = require("clean-webpack-plugin");
+
 
 const src  = path.resolve(__dirname, 'src');
 const dist = path.resolve(__dirname, 'dist');
@@ -14,8 +16,7 @@ module.exports = (env, argv) => {
         entry: './src/index.js',
         output: {
             path: dist,
-            filename: "[name]-[contenthash].js",
-            clean: true
+            filename: "[name]-[contenthash].js"
         },
 
         resolve: {
@@ -28,7 +29,10 @@ module.exports = (env, argv) => {
             static: dist
         },
         plugins: [
-            new HtmlWebpackPlugin()
+            new HtmlWebpackPlugin(),
+
+            // webpack already supports 'output.clean = true' but it is too smart
+            new CleanWebpackPlugin(),
         ],
         module: {
             rules: [{
