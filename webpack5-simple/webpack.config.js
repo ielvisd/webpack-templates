@@ -48,6 +48,12 @@ module.exports = (env, argv) => {
                 test: /\.js$/,
                 loader: "babel-loader",
                 exclude: /node_modules/
+            }, {
+                test: /\.(png|jpe?g|gif|webm|mp4|svg)$/,
+                loader: "file-loader",
+                options: {
+                    outputPath: "assets"
+                }
             }]
         },
         optimization: {
