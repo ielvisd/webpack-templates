@@ -44,8 +44,11 @@ module.exports = (env, argv) => {
                         }
                     }
                 ]
-            }
-            ]
+            }, {
+                test: /\.js$/,
+                loader: "babel-loader",
+                exclude: /node_modules/
+            }]
         },
         optimization: {
             minimizer: [
