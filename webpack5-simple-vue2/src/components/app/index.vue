@@ -16,7 +16,7 @@
 </style>
 
 <script>
-    import component1 from '@/views/component1/index.vue';
+    import component1 from '@/components/component1/index.vue';
 
     export default {
         components: {
