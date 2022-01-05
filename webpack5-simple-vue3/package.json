@@ -1,5 +1,5 @@
 {
-  "name": "webpack5-simple-vue2",
+  "name": "webpack5-simple-vue3",
   "version": "1.0.0",
   "description": "",
   "scripts": {
@@ -20,8 +20,7 @@
     "html-webpack-plugin": "^5.5.0",
     "mini-css-extract-plugin": "^2.4.5",
     "style-loader": "^3.3.1",
-    "vue-loader": "^15.9.8",
-    "vue-template-compiler": "^2.6.14",
+    "vue-loader": "^17.0.0",
     "webpack": "^5.65.0",
     "webpack-cli": "^4.9.1",
     "webpack-dev-server": "^4.7.2"
@@ -30,7 +29,6 @@
     "node": "<=16.13.1"
   },
   "dependencies": {
-    "vue": "^2.6.14",
-    "vue-router": "^3.5.3"
+    "vue": "^3.2.26"
   }
 }
