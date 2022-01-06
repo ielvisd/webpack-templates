@@ -28,7 +28,9 @@ module.exports = (env, argv) => {
         },
         mode: argv.mode,
         devServer: {
-            static: dist
+            static: dist,
+          // to be able to visit dev server from phones and other computers in your network
+          allowedHosts: 'all'
         },
         plugins: [
             new HtmlWebpackPlugin(),
