@@ -1,6 +1,6 @@
 import { createApp } from 'vue';
-import app from '@/components/app/index.vue';
+import RootComponent from '@/components/RootComponent/index.vue';
 
 
-createApp(app).mount("#app");
+createApp(RootComponent).mount("#app");
 

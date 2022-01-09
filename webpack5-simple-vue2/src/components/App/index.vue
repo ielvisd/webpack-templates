@@ -5,7 +5,7 @@
             <router-link to="/about">About</router-link>
         </nav>
         <router-view />
-        <component1></component1>
+        <Component1 />
     </div>
 </template>
 
@@ -16,11 +16,11 @@
 </style>
 
 <script>
-    import component1 from '@/components/component1/index.vue';
+    import Component1 from '@/components/Component1/index.vue';
 
     export default {
         components: {
-            component1,
+          Component1,
         }
     }
 </script>
