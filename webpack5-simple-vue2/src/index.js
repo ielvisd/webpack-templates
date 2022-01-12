@@ -1,3 +1,4 @@
+import "@/style.css";
 import Vue from 'vue';
 import App from '@/components/App/index.vue';
 import { router } from "@/router";
