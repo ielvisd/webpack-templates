@@ -13,7 +13,7 @@ module.exports = (env, argv) => {
   const IS_PRODUCTION = argv.mode === 'production';
 
   const config = {
-    entry: './src/index.js',
+    entry: './src/index.jsx',
     output: {
       path: dist,
       filename: "[name]-[contenthash].js"
@@ -43,11 +43,6 @@ module.exports = (env, argv) => {
           IS_PRODUCTION ? MiniCssExtractPlugin.loader : "style-loader",
           {
             loader: "css-loader",
-            options: {
-              modules: {
-                localIdentName: "[local]--[hash:base64:6]",
-              },
-            }
           }
         ]
       }, {
