@@ -2,9 +2,11 @@ import "@/style.css";
 import Vue from 'vue';
 import App from '@/components/App/index.vue';
 import { router } from "@/router";
+import Component1 from "@/components/Component1/index.vue";
 
+Vue.component('Component1', Component1);
 
-let app = new Vue({
+new Vue({
     data() {
         return {
             hi: 'Hi!'
@@ -12,9 +14,4 @@ let app = new Vue({
     },
     router,
     render: (h) => h(App),
-    el: "#app",
-});
-
-
-
-window.app = app;
+}).$mount("#app");

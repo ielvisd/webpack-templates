@@ -14,13 +14,3 @@
         background-color: gold;
     }
 </style>
-
-<script>
-    import Component1 from '@/components/Component1/index.vue';
-
-    export default {
-        components: {
-          Component1,
-        }
-    }
-</script>
