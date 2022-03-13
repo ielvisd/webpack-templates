@@ -1,5 +1,5 @@
 <template>
-    <div :class="$style.foo">Component1 {{ hello }}</div>
+  <div :class="$style.foo">Component1 {{ hello }}</div>
 </template>
 
 

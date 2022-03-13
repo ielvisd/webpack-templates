@@ -1,7 +1,7 @@
 export default {
-    data() {
-        return {
-            hello: "Hi!",
-        }
+  data() {
+    return {
+      hello: "Hi!",
     }
+  }
 }
